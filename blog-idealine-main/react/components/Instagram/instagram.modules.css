@@ -1,0 +1,77 @@
+.linkPost {
+  display: block;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.linkPost:hover .instagramImagem {
+  transform: scale(1.06);
+  box-shadow: none;
+}
+
+.instagramLinha {
+  max-width: 99vw;
+  margin: 20px 0;
+}
+
+.instagramTitulo {
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.conteudoInstagram {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderTrack {
+  display: flex;
+  width: max-content;
+  gap: 16px;
+  animation: scrollInfinito 90s linear infinite;
+}
+
+.instagramImagem {
+  width: 220px;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* .conteudoInstagram:hover .sliderTrack {
+  animation-play-state: paused;
+} */
+
+@keyframes scrollInfinito {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 8px));
+  }
+}
+
+/* teste acima  */
+
+/* responsivo  */
+@media (max-width: 1024px){
+  .instagramTitulo {
+  margin: 24px 20px;
+}
+
+.instagramTitulo img{
+  width: 70%;
+}
+
+  .instagramLinha{
+    max-width: 100vw;
+    margin: 36px 0;
+  }
+}

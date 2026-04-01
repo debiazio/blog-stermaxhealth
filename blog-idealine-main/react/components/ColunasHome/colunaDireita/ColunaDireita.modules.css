@@ -1,0 +1,132 @@
+.searchResults a {
+  text-decoration: none;
+}
+
+.searchResults img {
+  border-radius: 20px;
+  margin-top: 8px;
+}
+
+.campoPesquisa {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f7cfe5;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.searchBox {
+  display: flex;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.searchActions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchIconImage {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.colunaDireita {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 0 20px;
+  gap: 18px;
+}
+
+p {
+  text-align: justify;
+}
+
+
+.colunaDireita h2 {
+  color: #54595F;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 30px;
+  font-weight: 400;
+  border-top: 3px solid #f7cfe5;
+  border-bottom: 3px solid #f7cfe5;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 12px 0;
+  font-size: medium;
+}
+
+.textoColunaDireita {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.postListCard {
+  text-decoration: none;
+}
+
+.postListCard img {
+  border-radius: 20px;
+  padding-top: 12px;
+  margin: 18px 0 6px 0;
+}
+
+.searchResultContent,
+.postListTitle,
+.postListDate {
+  color: #54595F;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: #54595F;
+}
+
+/* responsivo */
+@media (max-width: 1024px) {
+  .colunaDireita h2 {
+    margin-top: 0;
+    margin: 0;
+  }
+
+  .searchIcon {
+    width: 12px;
+  }
+
+  .colunaDireita {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  .postListCard img {
+    margin: unset;
+  }
+
+  .postsRecentesTendencia{
+    display: none;
+  }
+}

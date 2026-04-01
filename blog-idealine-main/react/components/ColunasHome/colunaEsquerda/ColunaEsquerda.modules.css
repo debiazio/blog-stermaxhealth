@@ -1,0 +1,20 @@
+.colunaEsquerda {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* responsivo  */
+@media (max-width: 1320px) {
+  .colunaEsquerda{
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .colunaEsquerda {
+    padding: 18px;
+    width: 100%;
+  }
+}

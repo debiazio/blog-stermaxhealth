@@ -1,0 +1,36 @@
+.blogcontent {
+  display: block;
+}
+
+.main {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionContent {
+  max-width: 1300px;
+  width: 100%;
+}
+
+.colunas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* responsivo  */
+@media (max-width: 1024px) {
+  .colunas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .instagramBlog {
+    width: 100%;
+  }
+}

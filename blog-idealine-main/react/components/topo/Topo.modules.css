@@ -1,0 +1,198 @@
+.header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* ===== Desktop menu ===== */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.item {
+  padding: 18px 32px;
+}
+
+.link,
+.linkHome {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chevron {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.item:hover {
+  background-color: #fed4e4;
+}
+
+.item:hover .link,
+.item:hover .linkHome {
+  color: #FF3EB5;
+}
+
+/* Dropdown desktop via Portal */
+.dropdown {
+  position: absolute;
+  top: var(--dd-top);
+  left: var(--dd-left);
+  width: var(--dd-width);
+
+  background: #ffffff;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+
+  padding: 10px 0;
+  z-index: 999999;
+}
+
+.dropdownLink {
+  display: block;
+  padding: 16px 22px;
+  text-decoration: none;
+  color: #FF3EB5;
+}
+
+.dropdownLink:hover {
+  background: #fff1f7;
+}
+
+/* ===== Hamburger (mobile) ===== */
+.hamburger {
+  display: none;
+  /* aparece só no mobile */
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 14px;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburgerBar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ffffff;
+  margin: 5px 0;
+}
+
+/* ===== Drawer (mobile) ===== */
+.drawerOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1000000;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 78%;
+  max-width: 320px;
+  background: #ffffff;
+  box-shadow: 10px 0 22px rgba(0, 0, 0, 0.18);
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.drawerClose {
+  background: transparent;
+  border: 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.drawerContent {
+  padding: 8px 0;
+}
+
+.drawerLink,
+.drawerSubLink {
+  display: block;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: #FF3EB5;
+  text-transform: uppercase;
+}
+
+.drawerLink:hover,
+.drawerSubLink:hover {
+  background: #fff1f7;
+}
+
+.drawerItemButton {
+  width: 100%;
+  text-align: left;
+  padding: 16px 18px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: #FF3EB5;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drawerSubmenu {
+  padding: 0 0 8px 0;
+}
+
+.drawerSubLink {
+  text-transform: none;
+  /* igual seu dropdown desktop */
+  padding-left: 28px;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 1024px) {
+  .header {
+    background: none;
+    backdrop-filter: none;
+    box-shadow: none;
+    position: sticky;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* some o menu horizontal no mobile */
+  .menu {
+    display: none;
+  }
+
+  /* alinha a barra do topo (hamburguer à esquerda) */
+  .nav {
+    justify-content: flex-start;
+    min-height: 60px;
+  }
+}
