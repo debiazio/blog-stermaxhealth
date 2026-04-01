@@ -3,89 +3,34 @@ import estilos from "./instagram.modules.css"
 const posts = [
     {
     imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/ultimos-dias.webp",
-    link: "https://www.instagram.com/p/DWeP1IFDVyu/",
+      "https://stermax.com.br/images_idealine/blog-stermax/instagram/1.webp",
+    link: "https://www.instagram.com/p/DWhX_7ejgHN/",
   },
     {
     imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/perola-5l.webp",
-    link: "https://www.instagram.com/p/DWWr6XrE136/",
+      "https://stermax.com.br/images_idealine/blog-stermax/instagram/2.webp",
+    link: "https://www.instagram.com/p/DWZkb8aFANk/",
   },
     {
     imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/bellinha-5l-denovo.webp",
-    link: "https://www.instagram.com/p/DWUbejKiPf0/?img_index=1",
+      "https://stermax.com.br/images_idealine/blog-stermax/instagram/3.webp",
+    link: "https://www.instagram.com/p/DWUbdmlDaRa/?img_index=1",
   },
     {
     imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/idealine-diferente.webp",
-    link: "https://www.instagram.com/p/DWPmeeDkgWZ/?img_index=1",
+      "https://stermax.com.br/images_idealine/blog-stermax/instagram/4.webp",
+    link: "https://www.instagram.com/p/DWFTSadAVmd/",
   },
     {
     imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/esgotado.webp",
-    link: "https://www.instagram.com/p/DWPElYQAFmJ/",
+      "https://stermax.com.br/images_idealine/blog-stermax/instagram/5.webp",
+    link: "https://www.instagram.com/p/DWAJseEGjwl/",
   },
     {
     imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/rose-gold.webp",
-    link: "https://www.instagram.com/p/DWG8ehOjcT7/",
-  },
-    {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/5litros.webp",
-    link: "https://www.instagram.com/p/DWEf6kiiVix/",
-  },
-    {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/labelle8l.webp",
-    link: "https://www.instagram.com/p/DWCufmZCOXD/",
-  },
-    {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/silver-loteespecial.webp",
-    link: "https://www.instagram.com/p/DV_Zu2Tjamt/",
-  },
-    {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/save-the-date.webp",
-    link: "https://www.instagram.com/p/DVw3RYwgBtk/",
-  },
-  {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/dvm.webp",
-    link: "https://www.instagram.com/p/DVws8n1Fq1U/",
-  },
-  {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/1-idealine-blog-instagram.webp",
-    link: "https://www.instagram.com/p/DVtzcaqjyef/",
-  },
-  {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/2-idealine-blog-instagram.webp",
-    link: "https://www.instagram.com/p/DVrOvlwAbXv/",
-  },
-  {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/3-idealine-blog-instagram.webp",
-    link: "https://www.instagram.com/p/DVnzAqHjDn-/",
-  },
-  {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/4-idealine-blog-instagram.webp",
-    link: "https://www.instagram.com/p/DVjiVEiFLk2/",
-  },
-  {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/5-idealine-blog-instagram.webp",
-    link: "https://www.instagram.com/p/DVgc1l6gVoZ/",
-  },
-  {
-    imagem:
-      "https://stermax.com.br/images_idealine/blog-idealine/instagram/6-idealine-blog-instagram.webp",
-    link: "https://www.instagram.com/p/DVcGkJPCUTC/",
-  },
+      "https://stermax.com.br/images_idealine/blog-stermax/instagram/6.webp",
+    link: "https://www.instagram.com/p/DVws7_xDYk4/?img_index=1",
+  }
 ]
 
 export default function InstagramBlog() {
@@ -93,7 +38,7 @@ export default function InstagramBlog() {
     <div className={estilos.instagramLinha}>
       <div className={estilos.instagramTitulo}>
         <a
-          href="https://www.instagram.com/idealine_autoclaves/"
+          href="https://www.instagram.com/stermax_health/"
           target="_blank"
           rel="noreferrer"
         >
