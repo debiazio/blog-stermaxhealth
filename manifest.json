@@ -1,7 +1,7 @@
 {
   "vendor": "stermaxhealth",
   "name": "blog-stermax",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "title": "Blog Stermax",
   "description": "App para formar o blog da Stermax dentro do e-commerce Vtex",
   "builders": {
