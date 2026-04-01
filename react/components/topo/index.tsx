@@ -6,17 +6,11 @@ type Item = { label: string; href: string }
 
 const submenu: Item[] = [
   { label: "Todos os posts", href: "/blog" },
-  { label: "Voltar para a loja", href: "https://www.idealine.com.br" },
-  { label: "Manicure", href: "/blog/manicure" },
-  { label: "Podologia", href: "/blog/podologia" },
-  { label: "Lashes", href: "/blog/lashes" },
+  { label: "Voltar para a loja", href: "https://www.stermaxhealth.com.br" },
   { label: "Biossegurança", href: "/blog/biosseguranca" },
 ]
 
 const menu: Item[] = [
-  { label: "MANICURE", href: "/blog/manicure" },
-  { label: "PODOLOGIA", href: "/blog/podologia" },
-  { label: "LASHES", href: "/blog/lashes" },
   { label: "BIOSSEGURANÇA", href: "/blog/biosseguranca" },
 ]
 

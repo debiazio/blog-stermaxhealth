@@ -5,13 +5,13 @@
   align-items: center;
   flex-wrap: nowrap;
   padding: 62px 0;
-  background-color: #FFD8F3;
-  border-top: 10px solid #e90b91;
+  background-color: #1f80ca;
+  border-top: 10px solid #1d76ba;
 }
 
 .colunasFooterBlog p {
   font-size: small;
-  color: #696969;
+  color: #fff;
 }
 
 .linksFooter {

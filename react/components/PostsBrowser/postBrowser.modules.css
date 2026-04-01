@@ -70,7 +70,7 @@
 
 .feedImage:hover {
   transform: scale(1.01);
-  box-shadow: 6px 6px 16px #FFD8F3;
+  box-shadow: 6px 6px 16px #98bedd;
 }
 
 .feedCategory {
@@ -83,7 +83,7 @@
   min-height: 56px;
   padding: 0 22px;
   border-radius: 999px;
-  background: #f7cfe5;
+  background: #98bedd;
   color: #fff;
   font-size: 15px;
   font-weight: 500;
@@ -121,7 +121,7 @@
 }
 
 .feedTitleLink:hover {
-  color: #ff3eb5;
+  color: #1f7eca;
 }
 
 .feedExcerpt {
@@ -153,12 +153,12 @@
   bottom: 0;
   width: 58px;
   height: 3px;
-  background: #f7cfe5;
+  background: #98bedd;
   transform: translateX(-50%);
 }
 
 .feedReadMore:hover {
-  color: #ff3eb5;
+  color: #1f7eca;
 }
 
 /* estilos antigos usados no post interno */

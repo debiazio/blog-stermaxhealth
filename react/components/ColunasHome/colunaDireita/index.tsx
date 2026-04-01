@@ -271,30 +271,31 @@ export default function ColunaDireita() {
     <div className={estilos.colunaDireita}>
       <img
         className={estilos.imagemColunaDireita}
-        src="https://stermax.com.br/images_idealine/blog-idealine/idealine-blog-coluna-direita.webp"
-        alt="Imagem Idealine"
+        src="https://stermaxhealth.vtexassets.com/assets/vtex.file-manager-graphql/images/d5930914-b61f-40eb-8e50-644b8be03154___345859cb181f89d1a485dc00d654a1af.png"
+        alt="Imagem StermaxHealth"
         loading="eager"
       />
 
       <div className={estilos.textoColunaDireita}>
-        <p>
-          O <strong>blog Idealine</strong> é um espaço onde a estética se encontra
-          com as práticas de <strong>biossegurança</strong>. Dicas, informações e
-          insights para que você possa cuidar de si mesma e dos seus clientes de
-          forma segura e responsável.
-        </p>
+      <p>
+        O <strong>blog Stermax Health</strong> é um canal de conteúdo voltado a
+        <strong> consultórios, clínicas e profissionais da saúde</strong>, com foco
+        em <strong>biossegurança</strong>, boas práticas e informações relevantes
+        para a rotina de atendimento.
+      </p>
 
-        <p>
-          Aqui, você encontra as tendências e informações que garantem que seus
-          cuidados e tratamentos sejam realizados com responsabilidade, sempre
-          respeitando os mais rigorosos protocolos de biossegurança.
-        </p>
+      <p>
+        Aqui, você encontra conteúdos sobre protocolos, orientações e tendências
+        que contribuem para a realização de procedimentos com mais segurança,
+        responsabilidade e conformidade com os padrões exigidos no ambiente clínico.
+      </p>
 
-        <p>
-          Vamos juntos nessa busca pela beleza com responsabilidade, onde a saúde e
-          o bem-estar caminham lado a lado com o cuidado e a estética.
-        </p>
-      </div>
+      <p>
+        Nosso objetivo é apoiar profissionais que valorizam excelência,
+        credibilidade e cuidado em cada etapa do atendimento, promovendo saúde,
+        confiança e segurança no dia a dia do consultório.
+      </p>
+    </div>
 
       <div className={estilos.campoPesquisa}>
         <div className={estilos.searchBox}>

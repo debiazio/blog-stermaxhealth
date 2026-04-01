@@ -40,12 +40,12 @@
 }
 
 .item:hover {
-  background-color: #fed4e4;
+  background-color: #a6d4fa;
 }
 
 .item:hover .link,
 .item:hover .linkHome {
-  color: #FF3EB5;
+  color: #1f7eca;
 }
 
 /* Dropdown desktop via Portal */
@@ -66,11 +66,11 @@
   display: block;
   padding: 16px 22px;
   text-decoration: none;
-  color: #FF3EB5;
+  color: #1f7eca;
 }
 
 .dropdownLink:hover {
-  background: #fff1f7;
+  background: #a6d4fa;
 }
 
 /* ===== Hamburger (mobile) ===== */
@@ -137,13 +137,13 @@
   display: block;
   padding: 16px 18px;
   text-decoration: none;
-  color: #FF3EB5;
+  color: #1f7eca;
   text-transform: uppercase;
 }
 
 .drawerLink:hover,
 .drawerSubLink:hover {
-  background: #fff1f7;
+  background: #a6d4fa;
 }
 
 .drawerItemButton {
@@ -153,7 +153,7 @@
   background: transparent;
   border: 0;
   cursor: pointer;
-  color: #FF3EB5;
+  color: #1f7eca;
   text-transform: uppercase;
   display: flex;
   align-items: center;

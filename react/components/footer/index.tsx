@@ -5,44 +5,26 @@ export default function Footer() {
     <div className={estilos.colunasFooterBlog}>
       <div>
         <p>
-          © Copyright {new Date().getFullYear()} Idealine
+          © Copyright {new Date().getFullYear()} Stermax Health
         </p>
       </div>
       <div>
-        <a href='https://www.idealine.com.br'>
+        <a href='https://www.stermaxhealth.com.br'>
           <img
-            src="https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/970136f3-5332-44ce-91c9-178a67664e4d___54ed8fd55fc3fb37467a99c30d3040a0.png"
-            alt="logo Idealine"
+            src="https://stermaxhealth.vtexassets.com/assets/vtex.file-manager-graphql/images/6dd1d09d-eb8c-4b7e-b8e4-4cc4c148a488___b55bbc1fa6d82454a21486f21360a821.webp"
+            alt="logo Stermax"
           />
 
         </a>
       </div>
       <div className={estilos.linksFooter}>
-        {/* <a href="https://www.instagram.com/idealine_autoclaves/">
-          <img
-            src="https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/9fe5ae20-252c-4856-8843-b21cda302564___b959ce6ce7f554a40fb4b85e2e8f3814.webp"
-            alt="Ícone Instagram"
-          />
-        </a>
-        <a href="https://www.youtube.com/channel/UCiA0juVQujppyBHeLgDMLXQ">
-          <img
-            src="https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/9f4fe22f-ad3d-4f96-afc3-0e935a03e7a0___68c88acd9b5c70afe4abe2e65bea1ff2.webp"
-            alt="Ícone Youtube"
-          />
-        </a>
-        <a href="https://www.facebook.com/idealineautoclaves">
-          <img
-            src="https://mfmgroup.vtexassets.com/assets/vtex.file-manager-graphql/images/3d74dbd8-6b82-4660-a32b-38406eabc29e___662e48788b36ca656aff1a0c87c83795.webp"
-            alt="ícone Facebook"
-          />
-        </a> */}
 
         <ul className={estilos["example-2"]}>
           <li className={estilos["icon-content"]}>
             <a
               data-social="instagram"
               aria-label="Instagram"
-              href="https://www.instagram.com/idealine_autoclaves/"
+              href="https://www.instagram.com/stermax_health/"
             >
               <div className={estilos.filled}></div>
               <svg
@@ -65,7 +47,7 @@ export default function Footer() {
             <a
               data-social="facebook"
               aria-label="Facebook"
-              href="https://www.facebook.com/idealineautoclaves"
+              href="https://www.facebook.com/stermaxbiosseguranca/"
             >
               <div className={estilos.filled}></div>
               <svg
@@ -86,7 +68,7 @@ export default function Footer() {
           </li>
 
           <li className={estilos["icon-content"]}>
-            <a href="https://www.youtube.com/channel/UCiA0juVQujppyBHeLgDMLXQ" aria-label="Youtube" data-social="youtube">
+            <a href="https://www.youtube.com/@stermaxbiosseguranca5091" aria-label="Youtube" data-social="youtube">
               <div className={estilos.filled}></div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
