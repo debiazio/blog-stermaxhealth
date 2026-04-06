@@ -18,24 +18,44 @@ function isExternalLink(href: string) {
   return /^https?:\/\//i.test(href)
 }
 
+function CartIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M3 4H5L7.2 14.4C7.39 15.28 8.16 15.9 9.06 15.9H17.8C18.66 15.9 19.41 15.33 19.64 14.5L21 9H8"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle cx="10" cy="19" r="1.6" fill="currentColor" />
+      <circle cx="18" cy="19" r="1.6" fill="currentColor" />
+    </svg>
+  )
+}
+
 export default function Topo() {
   const homeRef = useRef<HTMLAnchorElement | null>(null)
   const dropdownRef = useRef<HTMLDivElement | null>(null)
   const drawerRef = useRef<HTMLDivElement | null>(null)
 
-  // Desktop dropdown (HOME)
   const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [pos, setPos] = useState({ top: 0, left: 0, width: 260 })
 
-  // Mobile drawer
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [mobileHomeOpen, setMobileHomeOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => setMounted(true), [])
 
-  // detecta mobile por media query
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 768px)")
     const apply = () => setIsMobile(mq.matches)
@@ -52,7 +72,6 @@ export default function Topo() {
     }
   }, [])
 
-  // trava scroll quando drawer abre
   useEffect(() => {
     if (!isMobile) return
 
@@ -64,7 +83,6 @@ export default function Topo() {
     }
   }, [drawerOpen, isMobile])
 
-  // posição do dropdown (desktop)
   const updatePosition = () => {
     const el = homeRef.current
     if (!el) return
@@ -92,7 +110,6 @@ export default function Topo() {
     }
   }, [open, isMobile])
 
-  // fecha dropdown desktop ao clicar fora + ESC
   useEffect(() => {
     if (!open || isMobile) return
 
@@ -115,7 +132,6 @@ export default function Topo() {
     }
   }, [open, isMobile])
 
-  // fecha drawer mobile ao clicar fora + ESC
   useEffect(() => {
     if (!drawerOpen || !isMobile) return
 
@@ -162,6 +178,20 @@ export default function Topo() {
         </button>
 
         <ul className={estilos.menu}>
+          <li className={estilos.item}>
+            <a
+              className={estilos.link}
+              href="https://www.stermaxhealth.com.br"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span style={{ display: "inline-flex", alignItems: "center" }}>
+                <CartIcon />
+              </span>
+              VOLTAR À LOJA
+            </a>
+          </li>
+
           <li className={estilos.item}>
             <a
               ref={homeRef}
@@ -244,6 +274,16 @@ export default function Topo() {
               </div>
 
               <div className={estilos.drawerContent}>
+                <a
+                  className={estilos.drawerLink}
+                  href="https://www.stermaxhealth.com.br"
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={closeDrawer}
+                >
+                  VOLTAR À LOJA
+                </a>
+
                 <button
                   type="button"
                   className={estilos.drawerItemButton}
