@@ -5,8 +5,8 @@
   align-items: center;
   flex-wrap: nowrap;
   padding: 62px 0;
-  background-color: #1f80ca;
-  border-top: 10px solid #1d76ba;
+  background: linear-gradient(to bottom, #A30D87, #8435DE);
+  border-top: 10px solid #A30D87;
 }
 
 .colunasFooterBlog p {
@@ -76,7 +76,7 @@ ul {
   height: 50px;
   border-radius: 50%;
   color: #ffff;
-  background-color: #1d76ba;
+  background-color: #FF941A;
   transition: all 0.3s ease-in-out;
 }
 
